@@ -726,7 +726,7 @@ while(true)
 	return 0;
 }
                                  //somma diagonali principali//
-progetta un algoritmo che calcoli la somma degli elementi della diagonale principale di una matrice quadrata i cui elementi sono scelti e caricati da tastiera dall'utente*/ 
+/*progetta un algoritmo che calcoli la somma degli elementi della diagonale principale di una matrice quadrata i cui elementi sono scelti e caricati da tastiera dall'utente*/ 
 #include<iostream>
 
 #include <stdio.h>
