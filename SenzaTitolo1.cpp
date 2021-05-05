@@ -1,4 +1,4 @@
-    /*                                                                    //calcola somma e media, minimo e massimo elementi di un vettore//
+                                                                    //calcola somma e media, minimo e massimo elementi di un vettore//
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -30,9 +30,9 @@ main(){
 
 	system("pause");
 	return 0;								
-}*/
+}
                                          //calcola somma mdia minoimo e massimo vettore
- /*                                                                       //calcola somma e media, minimo e massimo elementi di un vettore//
+//calcola somma e media, minimo e massimo elementi di un vettore//
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -56,12 +56,12 @@ main(){
 	{ 
 
 	    somma+=v[i];
-	//	if(v[i]>max){
-	//		max=v[i];
-	//		
-	//	}else if(v[i]<min){
-	//		min=v[i];
-	//	}
+		if(v[i]>max){
+			max=v[i];
+			
+		}else if(v[i]<min){
+			min=v[i];
+		}
 		
 	
 		
@@ -69,11 +69,11 @@ main(){
 	media=somma/numelementi;
 	cout<<"media"<<media<<endl;
 	cout<<"somma"<<somma<<endl;	
-//	cout<<"massimo "<<max<<endl;
-//	cout<<"minimo"<<min<<endl;
+	cout<<"massimo "<<max<<endl;
+	cout<<"minimo"<<min<<endl;
 	system("pause");
 	return 0;								
-}*/
+}
                                                  //Left shift vettore//
                   
 #include <iostream>
@@ -119,7 +119,7 @@ int qtshift;
 }
 
                                                         //right shift vettore//
- /*
+
  #include <iostream>
 #include <stdio.h>
 
@@ -167,10 +167,10 @@ int main()
 	cout<<endl;
 	system("pause");
 	return 0;
-}*/
+}
            
                                                //Verificare se un vettore contiene tutti elementi uguali.
-/*#include <iostream>
+#include <iostream>
 #include <stdio.h>
 using namespace std;
 main(){
@@ -192,17 +192,17 @@ main(){
     }
     /* NEL CICLO FOR SI CONFRONTA OGNI CELLA DEL VETTORE 
 	CON LA CELLA PRECEDENTE. LA CELLA CON INDICE 0  
-	NON PUO’ ESSERE CONFRONTATA CON LA CELLA PRECEDENTE (I -1).*/
+	NON PUOâ€™ ESSERE CONFRONTATA CON LA CELLA PRECEDENTE (I -1).*/
 /*	for(int i=1;i<max;i++)
 	{ 
 			if (vet[i] != vet[i-1] )
-			{        // se le due celle contengono valore diverso, il booleano è falso" 
+			{        // se le due celle contengono valore diverso, il booleano Ã¨ falso" 
 			uguali=false ;
 			i=max;
 			} 
 	}
 	/* STAMPA IL RISULTATO */
-/*	if (uguali==true)
+	if (uguali==true)
 	{
 	cout<<("La sequenza contiene numeri tutti uguali\n") ;
 	}
@@ -214,9 +214,9 @@ main(){
 
 	system("pause");
 	return 0;
-}            */            
+}                       
                                                                                  //matrice trasposta//
-  /*                                                                               
+                                                                                
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -290,8 +290,8 @@ main(){
 			system("pause");
 	return 0;
 }
-*/
-/*                                                          //stampa matrice//
+
+                                                         //stampa matrice//
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -333,9 +333,9 @@ main(){
 	}
 	system("pause");
 	return 0;
-}*/
+}
 /*dichiarare un array di interi di 10 elementi, popolare ciascun elemento con indice pari compreso lo zero con il numero 0 e quelli con l'indice dispari con il numero 1*/
-/*
+
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -352,9 +352,9 @@ main(){
 		 	
 		 
 		  if(i%2==0)
-		  { //l'elemento da considerare è pari allora:
+		  { //l'elemento da considerare Ã¨ pari allora:
 		  	v[i]=0;	
-		  }else //se l'elemento da considerare è dispari allora:
+		  }else //se l'elemento da considerare Ã¨ dispari allora:
 		   {
 				v[i]=1;
 	}
@@ -372,10 +372,10 @@ main(){
 	system("pause");
 	return 0;
 }
-*/
+
 
 //shift a destra e a sinistra
-/*
+
 #include <iostream>
 #include <stdio.h>
 
@@ -447,9 +447,9 @@ while(true)
 	system("pause");
 	return 0;
 }
- */
+ 
                                          //somma di due matrici//
- /*
+ 
  #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -547,8 +547,8 @@ main(){
 			}
 			system("pause");
 	return 0;
-}*/
-     /*                                     //cramer 2x2
+}
+                                         //cramer 2x2
                                           
 #include <iostream>//cramerserve alla risoluzione di un sistema equazioni lineari(di primo grado) vediamo un'esempio
 #include <stdio.h>
@@ -583,19 +583,19 @@ int main()
 		cout << endl;
 	}
 		//calcolo d(determinante) sottraendo il prodotto fra i valori della diagonale principale  e successivamente sottraendo ad esso il prodotto tra i valori della diagonale secondaria
-	float d = (mat1[0][0]*mat1[1][1]) - (mat1[0][1]*mat1[1][0]);  //questo è il calcolo
+	float d = (mat1[0][0]*mat1[1][1]) - (mat1[0][1]*mat1[1][0]);  //questo Ã¨ il calcolo
 	
 	cout << "D = " << d << endl;//stampo il determinante
-	if(d!=0){//se il determinante non è nullo
+	if(d!=0){//se il determinante non Ã¨ nullo
 	//allora si esegue questo blocco di codice che mi calcola dx, x, dy e y. Ora vediamo come:
 	
 	float c1;//termini noto prima equazione
 	float c2;//termini noto seconda equazione
 	
-	cout << "Inserisci termine noto prima equazione: ";//chiedo all'utente di inserire il termine noto della prima equazione,il valore inserito verrà messo in c1
+	cout << "Inserisci termine noto prima equazione: ";//chiedo all'utente di inserire il termine noto della prima equazione,il valore inserito verrÃ  messo in c1
 	cin >> c1;
 	
-	cout << "Inserisci termine noto seconda equazione: ";//chiedo all'utente di inserire il termine noto della seconda equazione,il valore inserito verrà messo in c2
+	cout << "Inserisci termine noto seconda equazione: ";//chiedo all'utente di inserire il termine noto della seconda equazione,il valore inserito verrÃ  messo in c2
 	cin >> c2;
 	//sostituisco gli elementi della prima colonna con i termini noti 
 	mat2[0][0] = c1;
@@ -640,7 +640,7 @@ cout<<"stampa matrice 2(per calcolo dy)"<<endl;
  }
  else
  { 
- 	//altrimenti se il determinante è nullo...
+ 	//altrimenti se il determinante Ã¨ nullo...
 	 cout<<"il sistema \212 impossibile o indeterminato(se anche dy=0)"<<endl;//...stampa "il sistema \212 impossibile o indeterminato(se anche dy=0)"
  } 
  system("pause");
@@ -654,7 +654,7 @@ system("pause");
 return 0; 
 }
                                       //cramer 3x3//
-        /*                              #include <iostream>
+                                      #include <iostream>
 #include <stdio.h>
 
 using namespace std;
@@ -724,10 +724,10 @@ while(true)
 }
 	system("pause");
 	return 0;
-}*/
+}
                                  //somma diagonali principali//
-/* progetta un algoritmo che calcoli la somma degli elementi della diagonale principale di una matrice quadrata i cui elementi sono scelti e caricati da tastiera dall'utente*/ 
-/*#include<iostream>
+progetta un algoritmo che calcoli la somma degli elementi della diagonale principale di una matrice quadrata i cui elementi sono scelti e caricati da tastiera dall'utente*/ 
+#include<iostream>
 
 #include <stdio.h>
 
@@ -764,5 +764,5 @@ for (int i = 0; i < r; i++) {
   cout << "sommma: " << somma<<endl;
   system("pause");
   return 0;
-}*/
+}
 
