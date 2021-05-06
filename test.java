@@ -60,12 +60,7 @@ public class CalcoloDeterminante3x3 {
 			}
 		}
 		
-		determinante = mat[0][0]*mat[1][1]*mat[2][2]+ //Diagonale principale 1
-				  mat[0][1]*mat[1][2]*mat[2][0]+ //Diagonale principale 2
-				  mat[0][2]*mat[1][0]*mat[2][1]- //Diagonale principale 3
-				  mat[0][2]*mat[1][1]*mat[2][0]- //Diagonale secondaria 1
-				  mat[0][0]*mat[1][2]*mat[2][1]- //Diagonale secondaria 2
-				  mat[0][1]*mat[1][0]*mat[2][2];//Diagonale secondaria 3
+		determinante = mat[0][0]*mat[1][1]*mat[2][2]+mat[0][1]*mat[1][2]*mat[2][0]+mat[0][2]*mat[1][0]*mat[2][1]-mat[0][2]*mat[1][1]*mat[2][0]-mat[0][0]*mat[1][2]*mat[2][1]-mat[0][1]*mat[1][0]*mat[2][2];
 		
 		System.out.println("Determinante = "+determinante);
 		
